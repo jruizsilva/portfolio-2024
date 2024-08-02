@@ -18,6 +18,7 @@ export default function Header() {
       component={NavLink}
       variant={pathname === link ? "filled" : "transparent"}
       to={link}
+      size="xs"
     >
       {label}
     </Button>
