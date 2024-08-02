@@ -4,7 +4,7 @@ import image from "../../assets/hero-image.svg";
 
 export default function Hero() {
   return (
-    <Container size="md">
+    <Container size="lg">
       <div className={classes.inner}>
         <div className={classes.content}>
           <Title className={classes.title}>
@@ -12,9 +12,10 @@ export default function Hero() {
           </Title>
           <Title c="blue">Full stack developer</Title>
           <Text c="dimmed" mt="md">
-            Build fully functional accessible web applications faster than ever
-            – Mantine includes more than 120 customizable components and hooks
-            to cover you in any situation
+            Como desarrollador full stack, me especializo en crear aplicaciones
+            dinámicas y robustas, adaptadas a las necesidades de cada proyecto.
+            Mi dominio abarca tecnologías como JavaScript, Java, PHP y MySQL,
+            cuento con habilidades en resolución de problemas y autonomía.
           </Text>
 
           <Group mt={30}>
