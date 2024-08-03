@@ -11,6 +11,7 @@ import {
   Group,
 } from "@mantine/core";
 import classes from "./ProjectListCarousel.module.scss";
+import { IconVideo } from "@tabler/icons-react";
 
 interface CardProps {
   title: string;
@@ -68,7 +69,11 @@ function CardCustom({ title, category, frontend, backend }: CardProps) {
         </SimpleGrid>
       </Card.Section>
       <Card.Section mt={"auto"} ml={"auto"}>
-        <Button variant="filled" size="xs">
+        <Button
+          variant="subtle"
+          size="xs"
+          leftSection={<IconVideo size={14} />}
+        >
           Ver demo
         </Button>
       </Card.Section>
