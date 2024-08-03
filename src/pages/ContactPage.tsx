@@ -12,7 +12,6 @@ import {
 import image from "../assets/contact-image.svg";
 import {
   IconBrandGithub,
-  IconBrandGithubFilled,
   IconBrandInstagram,
   IconBrandLinkedin,
   IconBrandWhatsapp,
