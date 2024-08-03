@@ -1,4 +1,12 @@
-import { Container, Group, Burger, Button } from "@mantine/core";
+import {
+  Container,
+  Group,
+  Burger,
+  Button,
+  Indicator,
+  Text,
+  Box,
+} from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { NavLink, useLocation } from "react-router-dom";
 
@@ -16,7 +24,7 @@ export default function Header() {
     <Button
       key={label}
       component={NavLink}
-      variant={pathname === link ? "filled" : "transparent"}
+      variant={pathname === link ? "light" : "transparent"}
       to={link}
       size="xs"
     >
@@ -26,8 +34,18 @@ export default function Header() {
 
   return (
     <header>
-      <Container size="md">
-        <Group h={"10vh"}>
+      <Container size="lg">
+        <Group h={"10vh"} gap={0} py={"sm"}>
+          <Indicator
+            c={"green"}
+            color="green"
+            processing
+            withBorder
+            offset={0}
+          />
+          <Text c={"dimmed"} size="xs" ml={"xs"}>
+            Open to work
+          </Text>
           <Group mx={"auto"} gap={5} visibleFrom="xs">
             {items}
           </Group>
