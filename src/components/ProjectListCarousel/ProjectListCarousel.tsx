@@ -33,6 +33,7 @@ function CardCustom({ title, category, frontend, backend }: CardProps) {
           <Text tt={"uppercase"} c={"blue"} fw={"bold"} size="xs">
             {category}
           </Text>
+
           <Title order={3} className={classes.title}>
             {title}
           </Title>
