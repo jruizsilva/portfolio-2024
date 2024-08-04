@@ -12,7 +12,7 @@ import {
 } from "@mantine/core";
 import classes from "./ProjectListCarousel.module.scss";
 import { IconVideo } from "@tabler/icons-react";
-import { blogImages } from "../../assets";
+import { blogImages, chatImages, socialImages } from "../../assets";
 
 interface CardProps {
   title: string;
@@ -20,6 +20,8 @@ interface CardProps {
   description: string;
   frontend: string[];
   backend: string[];
+  images: string[];
+  url: string;
 }
 
 function CardCustom({
@@ -28,6 +30,8 @@ function CardCustom({
   description,
   frontend,
   backend,
+  images,
+  url,
 }: CardProps) {
   return (
     <Card shadow="md" p="xl" radius="md" h={"100%"}>
@@ -62,7 +66,7 @@ function CardCustom({
 
       <Card.Section mb={"lg"}>
         <SimpleGrid cols={3} spacing={"xs"}>
-          {blogImages.map((image) => (
+          {images.map((image) => (
             <Image src={image} key={image} radius="sm" />
           ))}
         </SimpleGrid>
@@ -71,7 +75,7 @@ function CardCustom({
         <Button
           component="a"
           target="_blank"
-          href="https://www.youtube.com/playlist?list=PLagd0UOW2HkDr_gzINM7IcvsRCaEoVWrd"
+          href={url}
           variant="subtle"
           size="xs"
           leftSection={<IconVideo size={14} />}
@@ -91,27 +95,36 @@ const data = [
       "Desarrollé un curso práctico donde enseño a crear una aplicación de blog completa. Utilicé Laravel para construir una API Restful, React.js y Typescript para el frontend, y MySQL para la base de datos. Durante el curso, guío a los estudiantes a través del desarrollo full-stack, aplicando buenas prácticas y utilizando herramientas modernas como Mantine para la creación de interfaces de usuario.",
     frontend: ["Typescript", "React", "Mantine"],
     backend: ["PHP", "Laravel", "MySQL"],
+    images: blogImages,
+    url: "https://youtu.be/jxcwokCM2M0?si=RHRN7qiKB8An8SIK&t=16",
   },
-  {
-    title: "InmobiliariaRS",
-    category: "Freelance",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    frontend: ["Typescript", "React", "ChakraUI"],
-    backend: ["PHP", "Laravel", "MySQL"],
-  },
+  // {
+  //   title: "InmobiliariaRS",
+  //   category: "Freelance",
+  //   description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //   frontend: ["Typescript", "React", "ChakraUI"],
+  //   backend: ["PHP", "Laravel", "MySQL"],
+  //   images: blogImages,
+  // },
   {
     title: "Clon red social",
     category: "Proyecto personal",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    frontend: ["Typescript", "React"],
-    backend: ["PHP", "Laravel", "MySQL"],
+    description:
+      "Desarrollar una aplicación que permite a los usuarios publicar posts, comentar, dar likes a posts o comentarios, guardar posts, seguir usuarios. Subir imagenes de perfil y de fondo, editar los datos del usuario",
+    frontend: ["Typescript", "React", "ChakraUI"],
+    backend: ["Java", "Spring Boot 3", "H2"],
+    images: socialImages,
+    url: "https://www.youtube.com/watch?v=ajCkEWhbnkQ&ab_channel=JonathanRuizSilva",
   },
   {
-    title: "Chat",
+    title: "Simple Chat App",
     category: "Proyecto personal",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    frontend: ["Typescript", "React"],
-    backend: ["PHP", "Laravel", "MySQL"],
+    description:
+      "Desarrollar una aplicación web que permite a los usuarios chatear un salas publicas o privadas",
+    frontend: ["Typescript", "React", "ChakraUI"],
+    backend: ["Java", "Spring Boot 3", "H2"],
+    images: chatImages,
+    url: "https://www.youtube.com/watch?v=s1oYghlDoOs&ab_channel=JonathanRuizSilva",
   },
 ];
 

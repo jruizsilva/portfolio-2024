@@ -8,9 +8,9 @@ export default function Hero() {
     <Center h={"100%"} py={"xl"}>
       <div className={classes.content}>
         <Title className={classes.title}>
-          Hi! I'm <span className={classes.highlight}>Jonathan</span>
+          Hola! Soy <span className={classes.highlight}>Jonathan</span>
         </Title>
-        <Title c="blue">Full stack developer</Title>
+        <Title c="blue">Desarrollador Web Full Stack</Title>
         <Text c="dimmed" mt="md">
           Como desarrollador full stack, me especializo en crear aplicaciones
           dinámicas y robustas, adaptadas a las necesidades de cada proyecto. Mi
