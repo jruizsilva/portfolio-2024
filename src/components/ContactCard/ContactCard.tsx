@@ -6,6 +6,9 @@ import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconBrandInstagram,
+  IconBrandYoutube,
+  IconBrandYoutubeFilled,
+  IconBrandGithubFilled,
 } from "@tabler/icons-react";
 
 interface Props {}
@@ -35,13 +38,52 @@ export default function ContactCard(_props: Props): JSX.Element {
           </Group>
         </Stack>
         <Group gap={"lg"}>
-          <Button variant="subtle" h={"48px"} w={"48px"} radius={"100%"} p={0}>
+          <Button
+            component="a"
+            href="https://github.com/jruizsilva"
+            target="_blank"
+            variant="subtle"
+            h={"48px"}
+            w={"48px"}
+            radius={"100%"}
+            p={0}
+          >
             <IconBrandGithub size={26} />
           </Button>
-          <Button variant="subtle" h={"48px"} w={"48px"} radius={"100%"} p={0}>
+          <Button
+            component="a"
+            href="https://www.linkedin.com/in/jruizsilva/"
+            target="_blank"
+            variant="subtle"
+            h={"48px"}
+            w={"48px"}
+            radius={"100%"}
+            p={0}
+          >
             <IconBrandLinkedin size={26} />
           </Button>
-          <Button variant="subtle" h={"48px"} w={"48px"} radius={"100%"} p={0}>
+          <Button
+            component="a"
+            href="https://www.youtube.com/channel/UCab8243KJueYWMawjzcm8VA"
+            target="_blank"
+            variant="subtle"
+            h={"48px"}
+            w={"48px"}
+            radius={"100%"}
+            p={0}
+          >
+            <IconBrandYoutube size={26} />
+          </Button>
+          <Button
+            component="a"
+            href="https://www.instagram.com/jonathanruizsilva"
+            target="_blank"
+            variant="subtle"
+            h={"48px"}
+            w={"48px"}
+            radius={"100%"}
+            p={0}
+          >
             <IconBrandInstagram size={26} />
           </Button>
         </Group>
