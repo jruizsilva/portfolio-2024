@@ -7,8 +7,6 @@ import {
   IconBrandLinkedin,
   IconBrandInstagram,
   IconBrandYoutube,
-  IconBrandYoutubeFilled,
-  IconBrandGithubFilled,
 } from "@tabler/icons-react";
 
 interface Props {}

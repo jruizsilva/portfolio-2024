@@ -31,7 +31,7 @@ export default function Hero() {
           <Button
             component="a"
             target="_blank"
-            href="http://google.com"
+            href="https://drive.google.com/file/d/1hdBWokTnDyHaxCCVCUQ0QhsGeV0zdwEc/view?usp=sharing"
             variant="default"
             radius="xl"
             size="md"
