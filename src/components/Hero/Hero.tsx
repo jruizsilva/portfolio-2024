@@ -1,6 +1,7 @@
 import { Title, Button, Group, Text, Image, Center } from "@mantine/core";
 import classes from "./Hero.module.scss";
 import image from "../../assets/hero-image.svg";
+import { NavLink } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -18,10 +19,19 @@ export default function Hero() {
         </Text>
 
         <Group mt={30}>
-          <Button radius="xl" size="md" className={classes.control}>
+          <Button
+            component={NavLink}
+            to={"/projects"}
+            radius="xl"
+            size="md"
+            className={classes.control}
+          >
             Ver proyectos
           </Button>
           <Button
+            component="a"
+            target="_blank"
+            href="http://google.com"
             variant="default"
             radius="xl"
             size="md"
