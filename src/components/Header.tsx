@@ -5,7 +5,6 @@ import {
   Button,
   Indicator,
   Text,
-  Box,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { NavLink, useLocation } from "react-router-dom";
