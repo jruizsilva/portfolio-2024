@@ -20,12 +20,6 @@
   }
 }
 
-.control {
-  @media (max-width: $mantine-breakpoint-xs) {
-    flex: 1;
-  }
-}
-
 .image {
   width: rem(376px);
   height: rem(356px);

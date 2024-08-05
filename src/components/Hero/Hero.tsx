@@ -1,11 +1,11 @@
-import { Title, Button, Group, Text, Image, Center } from "@mantine/core";
+import { Title, Button, Text, Image, Center, Flex } from "@mantine/core";
 import classes from "./Hero.module.scss";
 import image from "../../assets/hero-image.svg";
 import { NavLink } from "react-router-dom";
 
 export default function Hero() {
   return (
-    <Center h={"100%"} py={"xl"}>
+    <Center h={"100%"}>
       <div className={classes.content}>
         <Title className={classes.title}>
           Hola! Soy <span className={classes.highlight}>Jonathan</span>
@@ -18,14 +18,15 @@ export default function Hero() {
           habilidades en resolución de problemas y autonomía.
         </Text>
 
-        <Group mt={30}>
-          <Button
-            component={NavLink}
-            to={"/projects"}
-            radius="xl"
-            size="md"
-            className={classes.control}
-          >
+        <Flex
+          gap={"md"}
+          mt={30}
+          direction={{
+            base: "column",
+            xs: "row",
+          }}
+        >
+          <Button component={NavLink} to={"/projects"} radius="xl" size="md">
             Ver proyectos
           </Button>
           <Button
@@ -35,11 +36,10 @@ export default function Hero() {
             variant="default"
             radius="xl"
             size="md"
-            className={classes.control}
           >
             Ver CV
           </Button>
-        </Group>
+        </Flex>
       </div>
       <Image src={image} className={classes.image} />
     </Center>
