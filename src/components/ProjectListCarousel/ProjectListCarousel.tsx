@@ -100,17 +100,17 @@ function CardCustom({
 }
 
 const data: CardProps[] = [
-  {
-    category: "Proyecto personal",
-    title: "Blog App",
-    description:
-      "Aplicación de blog completa. Utilicé Laravel para construir una API Restful, utilice React.js y Typescript para el frontend, y MySQL para la base de datos.",
-    frontend: ["Typescript", "React", "Mantine"],
-    backend: ["PHP", "Laravel", "MySQL"],
-    images: blogImages,
-    link: "https://basic-chat-with-websocket-frontend.vercel.app",
-    github: "https://github.com/jruizsilva/basic-chat-with-websocket-frontend",
-  },
+  // {
+  //   category: "Proyecto personal",
+  //   title: "Blog App",
+  //   description:
+  //     "Aplicación de blog completa. Utilicé Laravel para construir una API Restful, utilice React.js y Typescript para el frontend, y MySQL para la base de datos.",
+  //   frontend: ["Typescript", "React", "Mantine"],
+  //   backend: ["PHP", "Laravel", "MySQL"],
+  //   images: blogImages,
+  //   link: "https://basic-chat-with-websocket-frontend.vercel.app",
+  //   github: "https://github.com/jruizsilva/basic-chat-with-websocket-frontend",
+  // },
   // {
   //   title: "InmobiliariaRS",
   //   category: "Freelance",
