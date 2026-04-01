@@ -11,17 +11,18 @@ import {
   Group,
 } from "@mantine/core";
 import classes from "./ProjectListCarousel.module.scss";
-import { IconVideo } from "@tabler/icons-react";
+import { IconBrandGithub, IconLink } from "@tabler/icons-react";
 import { blogImages, chatImages, socialImages } from "../../assets";
 
-interface CardProps {
+export interface CardProps {
   title: string;
   category: string;
   description: string;
   frontend: string[];
   backend: string[];
   images: string[];
-  url: string;
+  github: string;
+  link: string;
 }
 
 function CardCustom({
@@ -31,7 +32,8 @@ function CardCustom({
   frontend,
   backend,
   images,
-  url,
+  github,
+  link,
 }: CardProps) {
   return (
     <Card shadow="md" p="xl" radius="md" h={"100%"}>
@@ -75,28 +77,39 @@ function CardCustom({
         <Button
           component="a"
           target="_blank"
-          href={url}
+          href={github}
           variant="subtle"
           size="xs"
-          leftSection={<IconVideo size={14} />}
+          leftSection={<IconBrandGithub size={14} />}
         >
-          Ver demo
+          Ver codigo
+        </Button>
+        <Button
+          component="a"
+          target="_blank"
+          href={link}
+          variant="subtle"
+          size="xs"
+          leftSection={<IconLink size={14} />}
+        >
+          Enlace
         </Button>
       </Card.Section>
     </Card>
   );
 }
 
-const data = [
+const data: CardProps[] = [
   {
-    category: "Youtube",
-    title: "Curso practico Laravel 11 React",
+    category: "Proyecto personal",
+    title: "Blog App",
     description:
-      "Desarrollé un curso práctico donde enseño a crear una aplicación de blog completa. Utilicé Laravel para construir una API Restful, React.js y Typescript para el frontend, y MySQL para la base de datos. Durante el curso, guío a los estudiantes a través del desarrollo full-stack, aplicando buenas prácticas y utilizando herramientas modernas como Mantine para la creación de interfaces de usuario.",
+      "Aplicación de blog completa. Utilicé Laravel para construir una API Restful, utilice React.js y Typescript para el frontend, y MySQL para la base de datos.",
     frontend: ["Typescript", "React", "Mantine"],
     backend: ["PHP", "Laravel", "MySQL"],
     images: blogImages,
-    url: "https://youtu.be/jxcwokCM2M0?si=RHRN7qiKB8An8SIK&t=16",
+    link: "https://basic-chat-with-websocket-frontend.vercel.app",
+    github: "https://github.com/jruizsilva/basic-chat-with-websocket-frontend",
   },
   // {
   //   title: "InmobiliariaRS",
@@ -114,7 +127,8 @@ const data = [
     frontend: ["Typescript", "React", "ChakraUI"],
     backend: ["Java", "Spring Boot 3", "H2"],
     images: socialImages,
-    url: "https://www.youtube.com/watch?v=ajCkEWhbnkQ&ab_channel=JonathanRuizSilva",
+    link: "https://github.com/jruizsilva/twitter-clon-devchallenges",
+    github: "https://github.com/jruizsilva/twitter-clon-devchallenges",
   },
   {
     title: "Simple Chat App",
@@ -124,7 +138,8 @@ const data = [
     frontend: ["Typescript", "React", "ChakraUI"],
     backend: ["Java", "Spring Boot 3", "H2"],
     images: chatImages,
-    url: "https://www.youtube.com/watch?v=s1oYghlDoOs&ab_channel=JonathanRuizSilva",
+    link: "https://basic-chat-with-websocket-frontend.vercel.app",
+    github: "https://github.com/jruizsilva/basic-chat-with-websocket-frontend",
   },
 ];
 

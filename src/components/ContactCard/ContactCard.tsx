@@ -27,10 +27,6 @@ export default function ContactCard(_props: Props): JSX.Element {
             <Text fw={500}>ruizsilvajonathan@gmail.com</Text>
           </Group>
           <Group gap={"xs"}>
-            <IconBrandWhatsapp />
-            <Text fw={500}>+54 1127914178</Text>
-          </Group>
-          <Group gap={"xs"}>
             <IconMapPin />
             <Text fw={500}>Buenos Aires, Argentina</Text>
           </Group>
@@ -62,19 +58,7 @@ export default function ContactCard(_props: Props): JSX.Element {
           </Button>
           <Button
             component="a"
-            href="https://www.youtube.com/channel/UCab8243KJueYWMawjzcm8VA"
-            target="_blank"
-            variant="subtle"
-            h={"48px"}
-            w={"48px"}
-            radius={"100%"}
-            p={0}
-          >
-            <IconBrandYoutube size={26} />
-          </Button>
-          <Button
-            component="a"
-            href="https://www.instagram.com/jonathanruizsilva"
+            href="https://www.instagram.com/jonnt99/"
             target="_blank"
             variant="subtle"
             h={"48px"}
