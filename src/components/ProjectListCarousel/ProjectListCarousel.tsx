@@ -127,8 +127,8 @@ const data: CardProps[] = [
     frontend: ["Typescript", "React", "ChakraUI"],
     backend: ["Java", "Spring Boot 3", "H2"],
     images: socialImages,
-    link: "https://github.com/jruizsilva/twitter-clon-devchallenges",
     github: "https://github.com/jruizsilva/twitter-clon-devchallenges",
+    link: "https://twitter-clon-frontend.vercel.app/login",
   },
   {
     title: "Simple Chat App",
