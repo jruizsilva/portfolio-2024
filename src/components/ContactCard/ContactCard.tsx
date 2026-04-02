@@ -1,12 +1,10 @@
 import { Card, Title, Stack, Group, Button, Text } from "@mantine/core";
 import {
   IconMail,
-  IconBrandWhatsapp,
   IconMapPin,
   IconBrandGithub,
   IconBrandLinkedin,
   IconBrandInstagram,
-  IconBrandYoutube,
 } from "@tabler/icons-react";
 
 interface Props {}

@@ -12,7 +12,7 @@ import {
 } from "@mantine/core";
 import classes from "./ProjectListCarousel.module.scss";
 import { IconBrandGithub, IconLink } from "@tabler/icons-react";
-import { blogImages, chatImages, socialImages } from "../../assets";
+import { chatImages, socialImages } from "../../assets";
 
 export interface CardProps {
   title: string;
