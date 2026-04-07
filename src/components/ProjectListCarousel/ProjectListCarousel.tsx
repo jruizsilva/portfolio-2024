@@ -91,6 +91,7 @@ function CardCustom({
           variant="subtle"
           size="xs"
           leftSection={<IconLink size={14} />}
+          title="demora 5-10min aprox en levantar el servidor despues del primer request"
         >
           Enlace
         </Button>
